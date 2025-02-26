@@ -105,6 +105,10 @@ body {
     font-weight: 600;
 }
 
+.container {
+    padding: 64px 8px 8px;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #000;
