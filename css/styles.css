@@ -105,11 +105,6 @@ body {
     font-weight: 600;
 }
 
-.jumbotron {
-    background-color: linear-gradient(45deg, #085, #056);
-    color: white;
-}
-
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #000;
