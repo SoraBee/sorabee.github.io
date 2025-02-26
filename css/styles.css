@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 100;
+    src: url(../fonts/Montserrat-Thin.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 200;
+    src: url(../fonts/Montserrat-ExtraLight.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 300;
+    src: url(../fonts/Montserrat-Light.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    src: url(../fonts/Montserrat-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 500;
+    src: url(../fonts/Montserrat-Medium.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 600;
+    src: url(../fonts/Montserrat-SemiBold.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 700;
+    src: url(../fonts/Montserrat-Bold.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 800;
+    src: url(../fonts/Montserrat-ExtraBold.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 900;
+    src: url(../fonts/Montserrat-Black.woff) format("woff");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
+    font-weight: 300;
+}
+
+.navbar {
+    background-color: #f8f8f8ee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    -webkit-backdrop-filter: blur(1em);
+    backdrop-filter: blur(1em);
+    box-shadow: 0 4px 4px #0003;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    line-height: 48px;
+    padding-inline-start: 8px;
+    display: flex;
+}
+
+.navbar ul li {
+    line-height: 48px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    line-height: 48px;
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.navbar ul li a.homepage-link {
+    font-weight: 500;
+}
+
+.navbar ul li a.active {
+    background-color: #0001;
+    font-weight: 400;
+    font-size: 1.15em;
+}
+
+.navbar ul li a.homepage-link.active {
+    font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .navbar {
+        background-color: #fff1;
+        color: #fff;
+    }
+
+    .navbar ul li a {
+        color: #fff;
+    }
+
+    .navbar ul li a.active {
+        background-color: #fff1;
+        color: #000;
+    }
+}
