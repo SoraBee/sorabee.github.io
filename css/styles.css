@@ -199,28 +199,11 @@ h2 {
     }
 
     .product-image img {
-        width: 200px;
-        height: 200px;
+        width: 38vw;
+        height: 38vw;
     }
-}
 
-@media screen and (max-width: 499px) {
-    .product-image img {
-        width: 160px;
-        height: 160px;
-    }
-}
-
-@media screen and (max-width: 399px) {
-    .product-image img {
-        width: 140px;
-        height: 140px;
-    }
-}
-
-@media screen and (max-width: 359px) {
-    .product-image img {
-        width: 120px;
-        height: 120px;
+    .product-image figcaption {
+        font-size: 1.2em;
     }
 }
