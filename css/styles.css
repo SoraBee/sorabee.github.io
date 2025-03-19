@@ -142,12 +142,12 @@ h2 {
     height: 240px;
     object-fit: cover;
     border-radius: 4px;
-    box-shadow: 0 0 0 #0003;
+    box-shadow: 0 0 0 #6666;
     transition: box-shadow 0.2s;
 }
 
 .product-image img:hover {
-    box-shadow: 0 6px 16px 1px #0003;
+    box-shadow: 0 6px 16px 1px #6666;
 }
 .product-image figcaption {
     margin: 16px 0;
@@ -205,5 +205,10 @@ h2 {
 
     .product-image figcaption {
         font-size: 1.2em;
+    }
+
+    .jumbotron {
+        padding: 16px;
+        font-size: 1.1em;
     }
 }
