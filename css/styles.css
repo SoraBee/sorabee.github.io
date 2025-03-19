@@ -64,13 +64,18 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    height: 48px;
-    width: 100%;
+    right: 0;
+    max-height: 48px;
     z-index: 1000;
     -webkit-backdrop-filter: blur(1em);
     backdrop-filter: blur(1em);
     box-shadow: 0 4px 4px #0003;
     overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.navbar-expanded {
+    max-height: 100vh;
 }
 
 .navbar ul {
@@ -105,6 +110,18 @@ body {
 
 .navbar ul li a.homepage-link.active {
     font-weight: 600;
+}
+
+.nav-button {
+    float: right;
+    line-height: 48px;
+    padding: 0 16px;
+    font-size: 1.15em;
+    border: none;
+    background: none;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
 }
 
 .jumbotron {
