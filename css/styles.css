@@ -57,8 +57,29 @@ body {
     padding: 64px 16px 0;
     font-family: "Montserrat", "Helvetica Neue", sans-serif;
     font-weight: 300;
+    background-color: #fff;
 }
 
+.circle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s, left 0.3s cubic-bezier(0, 0.8, 0.2, 1), top 0.3s cubic-bezier(0, 0.8, 0.2, 1);
+    z-index: 2147483600;
+}
+
+.circle.expanded {
+    width: 120px;
+    height: 120px;
+}
+  
 .navbar {
     background-color: #f8f8f8cc;
     position: fixed;
@@ -172,6 +193,14 @@ h2 {
     font-size: 1.4em;
     font-weight: 500;
 }
+
+footer {
+    margin: 16px 0;
+    padding: 16px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #000;
@@ -189,6 +218,10 @@ h2 {
 
     .navbar ul li a.active {
         background-color: #fff1;
+    }
+
+    footer {
+        color: #aaa;
     }
 }
 
