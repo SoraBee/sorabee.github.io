@@ -52,12 +52,39 @@
     src: url(../fonts/Montserrat-Black.woff) format("woff");
 }
 
+@keyframes body-transition {
+    0%, 30% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #000;
+    }
+}
+
+@keyframes page-container-transition {
+    0%, 30% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 body {
     margin: 0;
-    padding: 64px 16px 0;
+    padding: 0;
     font-family: "Montserrat", "Helvetica Neue", sans-serif;
     font-weight: 300;
+    animation: body-transition 1.5s cubic-bezier(0,0.5,0.5,1);
+}
+
+.page-container {
     background-color: #fff;
+    padding: 64px 16px 0;
+    transform: scale(1);
+    animation: page-container-transition 1.5s cubic-bezier(0,0.5,0.5,1);
+    min-height: calc(100vh - 64px);
 }
 
 .circle {
