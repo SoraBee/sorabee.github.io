@@ -71,6 +71,15 @@
         opacity: 1;
     }
 }
+
+@keyframes navbar-transition {
+    0%, 30% {
+        transform: translateY(-150%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
 body {
     margin: 0;
     padding: 0;
@@ -127,6 +136,7 @@ body {
     box-shadow: 0 4px 4px #0003;
     overflow: hidden;
     transition: max-height 0.3s;
+    animation: navbar-transition 1.5s cubic-bezier(0,0.5,0.5,1);
 }
  
 .navbar-expanded {
