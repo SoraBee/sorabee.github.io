@@ -71,13 +71,20 @@ body {
     pointer-events: none;
     mix-blend-mode: difference;
     transform: translate(-50%, -50%);
-    transition: width 0.3s, height 0.3s, left 0.3s cubic-bezier(0, 0.8, 0.2, 1), top 0.3s cubic-bezier(0, 0.8, 0.2, 1);
+    transition: width 0.5s, height 0.5s, left 0.5s cubic-bezier(0, 0.8, 0.2, 1), top 0.5s cubic-bezier(0, 0.8, 0.2, 1);
     z-index: 2147483600;
 }
 
 .circle.expanded {
     width: 120px;
     height: 120px;
+}
+
+.circle.expanded.clicked {
+    width: calc(200vw + 200vh);
+    height: calc(200vw + 200vh);
+    transition-timing-function: cubic-bezier(0.8, 0, 1, 0.2);
+    transition-duration: 0.7s;
 }
   
 .navbar {
