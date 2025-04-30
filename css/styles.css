@@ -98,14 +98,15 @@ body {
 
 .circle {
     position: absolute;
-    left: 0;
+    left: -100px;
     top: 0;
     width: 60px;
     height: 60px;
-    background: #fff;
+    background: transparent;
     border-radius: 50%;
     pointer-events: none;
-    mix-blend-mode: difference;
+    -webkit-backdrop-filter: invert(1);
+    backdrop-filter: invert(1);
     transform: translate(-50%, -50%);
     transition: width 0.5s, height 0.5s, left 0.5s cubic-bezier(0, 0.8, 0.2, 1), top 0.5s cubic-bezier(0, 0.8, 0.2, 1);
     z-index: 2147483600;
@@ -119,8 +120,9 @@ body {
 .circle.expanded.clicked {
     width: calc(200vw + 200vh);
     height: calc(200vw + 200vh);
-    transition-timing-function: cubic-bezier(0.8, 0, 1, 0.2);
-    transition-duration: 0.7s;
+    background-color: #fff;
+
+    transition: width 0.7s cubic-bezier(0.8, 0, 1, 0.2), height 0.7s cubic-bezier(0.8, 0, 1, 0.2), left 0.5s cubic-bezier(0.8, 0, 1, 0.2), top 0.5s cubic-bezier(0.8, 0, 1, 0.2), background 0.7s 0.5s ease-in;
 }
   
 .navbar {

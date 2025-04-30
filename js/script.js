@@ -35,7 +35,7 @@ document.querySelectorAll("img").forEach(function(img) {
       cursor.classList.add("clicked");
       setTimeout(() => {
         window.location.href = a.href; // Navigate to the link after 1000ms
-    }, 1000); // Delay of 1000ms
+    }, 1500); // Delay of 1000ms
   });
   });
 
