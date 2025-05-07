@@ -201,6 +201,9 @@ body {
     text-align: center;
 }
 
+.jumbotron.jumbtron-books {
+    background: url(images/books.jpg) linear-gradient(135deg, #0599, #0644);
+}
 .jumbotron h1 {
     font-size: 2.3em;
     font-weight: 600;
@@ -220,6 +223,8 @@ h2 {
 
 .product-image {
     margin: 16px;
+    color: inherit;
+    text-decoration: none;
 }
 
 .product-image img {
