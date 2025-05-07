@@ -201,7 +201,7 @@ body {
     text-align: center;
 }
 
-.jumbotron.jumbtron-books {
+.jumbotron {
     background: url(images/books.jpg) linear-gradient(135deg, #0599, #0644);
 }
 .jumbotron h1 {
