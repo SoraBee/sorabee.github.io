@@ -88,6 +88,30 @@ body {
     animation: body-transition 1.5s cubic-bezier(0,0.5,0.5,1);
 }
 
+a {
+    text-decoration: none;
+    color: #26e;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #15c;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #43e;
+}
+
+a:visited:hover {
+    color: #32c;
+}
+
+a:active {
+    color: #c96;
+    text-decoration: underline;
+}
+
 .page-container {
     background-color: #fff;
     padding: 64px 16px 0;
@@ -205,6 +229,14 @@ body {
     background: linear-gradient(135deg, #09f, #0c8), url(/images/books.jpg);
     background-size: cover;
     background-blend-mode: multiply;
+    background-position: center;
+}
+
+.jumbotron-calculators {
+    background: linear-gradient(135deg, #09f, #0c8), url(/images/calculator.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
 }
 
 .jumbotron h1 {
@@ -254,9 +286,16 @@ h2 {
     font-weight: 400;
 }
 
+.product-image figcaption.product-price s.product-price-was {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #666;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom right, transparent 47%, #666 49%, #666 51%, transparent 53%);
+}
+
 footer {
     margin: 16px 0;
-    padding: 16px;
     text-align: center;
     font-size: 0.9em;
     color: #666;
