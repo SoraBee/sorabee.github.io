@@ -319,6 +319,13 @@ a:active {
     background-position: center;
 }
 
+.jumbotron-stationery {
+    background: linear-gradient(135deg, #09f, #0c8), url(/images/stationary-set2.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+}
+
 .jumbotron h1 {
     font-size: 2.3em;
     font-weight: 600;
@@ -380,6 +387,23 @@ h3 {
     background-image: linear-gradient(to bottom right, transparent 47%, #666 49%, #666 51%, transparent 53%);
 }
 
+.product-image figcaption.product-price-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -8px;
+}
+
+.product-image figcaption.product-price-group .product-price {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.product-image figcaption.product-price-group .product-qty {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+}
 footer {
     margin: 16px 0;
     text-align: center;
@@ -390,6 +414,32 @@ footer {
     body {
         background-color: #000;
         color: #fff;
+    }
+
+    .page-container {
+        background-color: #000;
+        color: #fff;
+    }
+
+    a {
+        color: #5af;
+    }
+
+    a:hover {
+        color: #7bf;
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: #a7f;
+    }
+
+    a:visited:hover {
+        color: #b9f;
+    }
+
+    a:active {
+        color: #db9;
     }
 
     .navbar {
@@ -403,6 +453,11 @@ footer {
 
     .navbar ul li a.active {
         background-color: #fff1;
+    }
+
+    .product-image figcaption.product-price s.product-price-was {
+        color: #aaa;
+        background-image: linear-gradient(to bottom right, transparent 47%, #aaa 49%, #aaa 51%, transparent 53%);
     }
 
     footer {
@@ -455,5 +510,10 @@ footer {
     .jumbotron {
         padding: 16px;
         font-size: 1.1em;
+    }
+
+    .product-image figcaption.product-price-group {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
